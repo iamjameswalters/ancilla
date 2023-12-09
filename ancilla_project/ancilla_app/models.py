@@ -43,7 +43,7 @@ class Patron(models.Model):
 
 
 class Book(models.Model):
-    name = models.CharField(max_length=128)
+    title = models.CharField(max_length=128)
     author = models.CharField(max_length=80)
     genre = models.CharField(max_length=1, choices=GENRE_CHOICES)
 
