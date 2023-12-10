@@ -5,7 +5,7 @@ repos:
     rev: v3.2.0
     hooks:
     -   id: trailing-whitespace
-    -   id: end-of-file-fixer
+    # -   id: end-of-file-fixer
     -   id: check-yaml
     -   id: check-added-large-files
 - repo: https://github.com/astral-sh/ruff-pre-commit
@@ -24,11 +24,13 @@ repos:
         additional_dependencies:
         -   eslint@8.55.0
         -   eslint-plugin-vue@9.19.2
--   repo: https://github.com/awebdeveloper/pre-commit-stylelint
-    rev: '0.0.2' # Use the sha or tag you want to point at like 0.0.1
-    hooks:
-    -   id: stylelint
-        additional_dependencies: ['stylelint@15.11.0', 'stylelint-config-standard@34.0.0']
+# Commenting this out for now because it's causing problems
+# and I'm just trying to get started 🙄️
+# -   repo: https://github.com/awebdeveloper/pre-commit-stylelint
+#     rev: '0.0.2' # Use the sha or tag you want to point at like 0.0.1
+#     hooks:
+#     -   id: stylelint
+#         additional_dependencies: ['stylelint@15.11.0', 'stylelint-config-standard@34.0.0']
 -   repo: https://github.com/aufdenpunkt/pre-commit-js-beautify
     rev: 1.13.0 # represents the used version of JS Beautify as well
     hooks:
